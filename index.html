@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/VTB_Logo_2018.svg/138px-VTB_Logo_2018.svg.png" id="BTBbank"
+          alt="loqoBTBbank">
+  </header>
+
+
+<main>
+    <div class="container">
+      <h1 id="peak">Подбор оптимального вклада</h1>
+      <div class="calc">
+        <table id="info">
+          <tr>
+            <td>Начальная сумма вклада</td>
+            <td><input type="number" id="start" /></td>
+          </tr>
+          <tr>
+            <td>Сумма ежемесячного пополнения</td>
+            <td><input type="number" id="monthIncrease" /></td>
+          </tr>
+          <tr>
+            <td>Срок вклада</td>
+            <td><input type="number" id="period" /></td>
+          </tr>
+          <tr>
+            <td>Валюта вклада</td>
+            <!-- <td><input type="number" id="days" /></td> -->
+            <td>
+              <select name="" id="currency">
+                <option value="RUB">RUB</option>
+                <option value="USD">USD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="btn">Подобрать</button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="tbMain"></div>  <!-- для создании таблицы-->
+    </div>
+    <script src="banks.js"></script>
+    <script src="script.js"></script>
+
+  </main>
+  <footer>
+    <div class="endsite">
+        <p>190000, г. Санкт-Петербург, ул. Большая Морская, д. 29</p>
+        <p>Генеральная лицензия Банка России №1000</p>
+    </div>
+</footer>
+
+
+  </body>
+</html>
